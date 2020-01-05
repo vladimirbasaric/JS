@@ -40,7 +40,6 @@ console.log(izraz)
  Vrednost izraza "pet" * 2 je NaN . 
  Vrednost izraza !"" je true . 
 
-
  Objašnjenje za ovakvo ponašanje leži u implicitnoj konverziji. 
  Naime, kada se nekom operatoru proslede tipovi koji su različiti ili tip koji on ne očekuje, 
  JavaScript će pokušati da, nekim komplikovanim mehanizmom, konvertuje tipove tako da može da 

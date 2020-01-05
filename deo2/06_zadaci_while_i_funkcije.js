@@ -149,8 +149,10 @@ function sadrzi_cifru(broj, cifra) {
 		}
 
 		broj = Math.floor(broj / 10);
-  }
-  
+	}
+		
+}
+
 // 7. Napisati funkciju ​obrni_nisku(s) ​koja vraća obrnutu nisku ​s​.
 // Zatim treba pozvati funkciju i ispisati dobijenu vrednost.
 // Primer: ako je zadata niska ​abcde​ treba ispisati ​edcba​.
@@ -171,8 +173,9 @@ function obrni_nisku(s) {
 
 	return obrnuta;
 }
-	return false;
-}
+	
+return false;
+
 
 // 8. Napisati funkciju ​broj_cifara(x) ​koja vraća broj cifara broja ​x​.
 // Zatim treba odrediti i ispisati prvu cifru u zapisu zadatog broja.
