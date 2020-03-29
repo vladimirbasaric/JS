@@ -158,6 +158,10 @@ var str = "abcde";
 // izdvojimo podstringove koji oznacavaju prvi i poslednji karakter
 var prvi = str.substr(0, 1);
 var poslednji = str.substr(str.length - 1, 1);
+// mozemo da ih dohvatimo i ovako 
+// let prvi = str.charAt(0);
+// let poslednji = str.charAt(str.length - 1);
+
 // pa onda izvrsimo zamenu ovim redom
 str = str.replace(poslednji, prvi);
 str = str.replace(prvi, poslednji);
@@ -178,6 +182,12 @@ nece razmeniti vrednosti
 var pomocna = niz[0];
 niz[0] = niz[niz.length - 1];
 niz[niz.length - 1] = pomocna;
+console.log(niz);
+// moze i ovako
+let prvi = niz[0];
+let poslednji = niz[niz.length - 1];
+niz[0] = poslednji;
+niz[niz.length - 1 ] = prvi;
 console.log(niz);
 
 // 3.2 Zameniti srednji element niza brojem 10.
