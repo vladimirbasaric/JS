@@ -171,7 +171,7 @@ for (var i = 0; i < niz.length; i++) {
   }
 }
 
-// 7. Napisati program koji izračunava proizvode lemenata niza.
+// 7. Napisati program koji izračunava proizvode elemenata niza.
 // Primer: za niz​​[6,2,3,2] ​​treba ispisati​ 72​
 
 var niz = [6, 2, 3, 2];
@@ -203,7 +203,7 @@ console.log(zbir);
 // Primer: za broj​ 111​ i niz​[3,6,88,2,11,9]​ treba ispisati‚‚​Ne​’’.
 var niz = [3, 6, 88, 2, 11, 9];
 var broj = 6;
-var pronadjen = false;;
+var pronadjen = false;
 
 for (var i = 0; i < niz.length; i++) {
   if (niz[i] == broj) {
@@ -274,6 +274,22 @@ for (var i = 0; i < niska.length; i++) {
 }
 
 console.log(brojac);
+
+//ili preko if-a
+let niska = 'Eukaliptus'
+let brojac = 0;
+
+for (i = 0 ; i < niska.length; i++ ){
+    if(niska[i] == 'a' || niska[i] == 'A' ||
+       niska[i] == 'e' || niska[i] == 'E' ||
+       niska[i] == 'i' || niska[i] == 'I' ||
+       niska[i] == 'o' || niska[i] == 'O' ||
+       niska[i] == 'u' || niska[i] == 'U' ){
+           brojac ++;
+       }
+}
+
+console.log(brojac)
 
 // 13. Napisati program koji ispisuje sve podniske dužine 4 za date niske.
 // Primer: za nisku​ program​ treba ispisati niske:​ prog rogr ogra gram 

@@ -10,6 +10,11 @@ while (i <= n) {
   console.log(i);
   i++;
 }
+// ili preko for petlje
+var n = 5;
+for (i = 1; i <= n; i++){
+    console.log(i)
+}
 
 // 2. Napisati program koji određuje najveću cifru u zapisu zadatog broja x​.
 // Primer: za zadati broj​ 65234 ​treba ispisati​ 6​.
@@ -52,6 +57,21 @@ if (!pronadjen) {
   console.log("Nema negativnih elemenata.");
 }
 
+// ili preko for petlje
+let niz = [1, 5, 8, 23, 51, -11, -70];
+let pronadjen = false; 
+for (let i = 0; i < niz.length; i++){
+  if (niz[i] < 0){
+      console.log(niz[i]);
+      pronadjen = true;   
+      break;
+  }   
+}
+
+if (!pronadjen) {
+  console.log("Nema negativnih elemenata.");
+}
+
 // 4. Napisati program koji ispisuje samo one elemente niza koji su deljivi brojem 5.
 // Primer: za zadati broj​ [1,42,-56,15,-10,42,0,2]​  treba ispisati ​15 -10 0​.
 // Primer: za zadati broj ​[100,250,3000,-90010] ​treba ispisati​ 100 250 3000 -90010​.
@@ -70,6 +90,7 @@ while (i < niz.length) {
   i++;
 }
 
+// moze i ovako
 for (i = 0; i < niz.length; i++) {
   if (niz[i] % 5 != 0) {
     continue;
@@ -146,7 +167,6 @@ function obrni_cifre(broj) {
   } else {
     return obrnut_broj;
   }
-
 
 }
 
