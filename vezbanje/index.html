@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
     <title>vezbanje</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="pt-3">Igra Vesala</h1>
+        <div>
+            <p>Trenutna rec:
+                <span id="trenutnaRec"></span>
+            </p>         
+        </div>
+        <p>Broj neuspelih pokusaja: <span>0</span></p>
+        <div class="form-group">
+            <label >Tekuce slovo:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label >Koriscena slova:</label>
+            <input type="text">
+        </div>
+        <button class="btn btn-primary">Zameni pojavljivanja</button>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
